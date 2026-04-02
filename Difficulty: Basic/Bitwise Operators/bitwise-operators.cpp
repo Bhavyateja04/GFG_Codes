@@ -1,18 +1,15 @@
-#include <iostream>
-using namespace std;
+void operators(int a, int b, int c) {
+    // Do a^a below
+      int d=(a^a) ;
+    //Do c^b below
+    int e=(c^b);
+    //Do a&b below
+    int f=(a&b);
+    //Do c|(a^a) below
+    int g=c|(a^a);
+    //Do ~e below
+    e= ~e ;
 
-int main() {
-    int a, b, c;
-    cin >> a >> b >> c;
-
-    // perform bitwise operations here
-     int d = a ^ a;
-    int e = c ^ b;
-    int f = a & b;
-    int g = c | (a ^ a);
-    e = ~ e;
-    
-    cout<<d<<" "<<e<<" "<<f<<" "<<g<<endl;
-    
-    return 0;
+     //The line below prints the output. Don't change it!
+    cout << d << " " << e << " " << f << " " << g <<endl;
 }
